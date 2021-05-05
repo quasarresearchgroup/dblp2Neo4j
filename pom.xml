@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.quasar</groupId>
+  <artifactId>dblp2Neo4j</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>DBLP to Neo4j</name>
+  <description>Reads XMLfile and stores data in Neo4j database</description>
+
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <directory>lib</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>15</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+
+  	<!-- https://mvnrepository.com/artifact/org.neo4j.driver/neo4j-java-driver -->
+	<dependency>
+	    <groupId>org.neo4j.driver</groupId>
+	    <artifactId>neo4j-java-driver</artifactId>
+	    <version>4.2.5</version>
+	</dependency>
+  	
+  	<dependency>  	
+  		<groupId>org.neo4j</groupId>
+		<artifactId>neo4j-jdbc-driver</artifactId>
+  		<version>4.0.0</version>
+  	</dependency>
+  	
+  </dependencies>
+</project>
