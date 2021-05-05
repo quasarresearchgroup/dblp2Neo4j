@@ -1,4 +1,4 @@
-package tutorial;
+package dummy;
 
 import java.util.List;
 

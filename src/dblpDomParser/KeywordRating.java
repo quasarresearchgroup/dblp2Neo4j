@@ -1,4 +1,4 @@
-package createdatabase;
+package dblpDomParser;
 
 public class KeywordRating implements Comparable<KeywordRating>{
     String keyword;

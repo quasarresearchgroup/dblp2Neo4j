@@ -1,4 +1,4 @@
-package createdatabase;
+package dblpDomParser;
 
 import java.util.ArrayList;
 import java.util.Arrays;

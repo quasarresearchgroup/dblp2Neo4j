@@ -1,4 +1,4 @@
-package createdatabase;
+package dblpDomParser;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,7 +24,10 @@ import org.xml.sax.SAXException;
 public class CreateDatabase {
 
 //    private static String url = "jdbc:neo4j:http://localhost";
-   private static String url = "jdbc:neo4j:bolt://localhost:7687";
+//   private static String url = "jdbc:neo4j:bolt://localhost:7687";
+	private static String url = "jdbc:neo4j:bolt://194.210.120.117:7687";
+
+	
     private static Connection conn = null;
 	
 	private static Boolean clearDatabase = true;  //Clears the database before inserting new data.
@@ -51,7 +54,7 @@ public class CreateDatabase {
 	public static void main(String[] args) {
 
         try {
-        	Connection conn = DriverManager.getConnection(url, "neo4j", "Mafalda2021");
+        	conn = DriverManager.getConnection(url, "neo4j", "Mafalda2021");
         } catch (SQLException e) {
             System.err.println("ERROR: "+ e.getClass().getName()+": "+e.getMessage());
             System.exit(0);

@@ -1,4 +1,4 @@
-package tutorial;
+package dummy;
 
 import org.neo4j.driver.AuthTokens;
 import org.neo4j.driver.Driver;
